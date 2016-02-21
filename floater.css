@@ -1,17 +1,59 @@
+body {
+	font-family: sans-serif;
+	margin: 20px;
+}
+
 input {
 	width: 300px;
 	height: 30px;
+	border-radius: 5px;
+	outline: none;
+	border: 1px solid rgb(240, 240, 240);
+}
+
+.floater-container {
+	margin-top: 20px;
+}
+
+.floater::-webkit-input-placeholder {
+	opacity: 0;
 }
 
 .floater-label {
 	display: inline;
 	position: absolute;
+	font-size: 70%;
+	transition: 0.2s;
 }
 
 .floater-label.hidden {
-	display: none;
+	animation: slideDown 0.4s;
+	transform: translate(5px, 50%);
+	color: rgb(200, 200, 200);
 }
 
 .floater-label.visible {
-	display: block;
+	animation: slideUp 0.4s;
+	transform: translate(0, -100%);
+	color: #F88071;
+}
+
+@keyframes slideUp {
+	from {
+		transform: translate(5px, 50%);
+	}
+
+	to {
+		transform: translate(0, -100%);
+	}
+}
+
+@keyframes slideDown {
+	from {
+		transform: translate(0, -100%);
+	}
+
+	to {
+		transform: translate(5px, 50%);
+	}
 }

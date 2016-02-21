@@ -34,6 +34,7 @@ Floater.prototype.createElements = function () {
 		var lbl = this.createLabel(el);
 		container.appendChild(lbl);
 		container.appendChild(el);
+		lbl.className += ' hidden';
 		this.bindEvent(el, lbl);
 	}
 }
