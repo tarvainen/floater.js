@@ -1,0 +1,17 @@
+input {
+	width: 300px;
+	height: 30px;
+}
+
+.floater-label {
+	display: inline;
+	position: absolute;
+}
+
+.floater-label.hidden {
+	display: none;
+}
+
+.floater-label.visible {
+	display: block;
+}
