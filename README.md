@@ -54,6 +54,7 @@ The floater.js is styled with the css and for complete styling you have only the
     	border-radius: 5px;
     	outline: none;
     	border: 1px solid rgb(240, 240, 240);
+    	padding: 5px;
     }
     
     .floater-container {
