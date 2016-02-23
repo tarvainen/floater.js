@@ -18,7 +18,7 @@ Include the `floater.js` or `floater.min.js` in your html file like the below. A
 
     <html>
       <head>
-      <link href="../floater.css" rel="stylesheet"/>
+      <link href="style.css" rel="stylesheet"/>
       </head>
     
       <body>
@@ -48,7 +48,8 @@ If the `usePlaceholder` is set to `false` will the value be retrieved from the a
     <input type="text" label="This is the label" class="floater" placeholder="There is also the placeholder">
 
 ## Styling
-The floater.js is styled with the css and for complete styling you have only these few classnames to use.
+The floater.js is styled with the css and for complete styling you have only these few classnames to use. Specify the next in your `style.css`.
+
     body {
     	font-family: sans-serif;
     }
@@ -124,7 +125,7 @@ And add the following in to your `script.js`.
     	return false;
     }
     
-By defining the `type` property you may add a specific classname for your message so it can be styled in the css.
+By defining the `type` property you may add a specific classname for your message so it can be styled in the css. Add the following in to your `style.css`.
 
     .floater-message {
     	position: absolute;
