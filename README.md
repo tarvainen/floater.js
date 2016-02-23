@@ -44,7 +44,10 @@ If the `usePlaceholder` is set to `false` will the value be retrieved from the a
 
 ## Styling
 The floater.js is styled with the css and for complete styling you have only these few classnames to use.
-
+    body {
+    	font-family: sans-serif;
+    }
+    
     input {
     	width: 100%;
     	height: 30px;
@@ -80,7 +83,6 @@ The floater.js is styled with the css and for complete styling you have only the
     	color: #F88071;
     }
     
-    / * hide the original placeholder */
     .floater::-webkit-input-placeholder {
     	opacity: 0 !important;
     }
