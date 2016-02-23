@@ -3,7 +3,12 @@ Yet another floating label implementation for web. Minimalistic styling, plain J
 
 # What it does
 Basically it just moves the placeholder text to somewhere else when the input is focused. Only for usability.
-See few examples and download stylesheets at http://projects.tarvainen.xyz/floater/.
+See few examples and download preset stylesheets at http://projects.tarvainen.xyz/floater/.
+
+![](http://projects.tarvainen.xyz/floater/floater.jpg)
+
+The example above is achieved with the code below.
+
 
 # Installation
 Just run `npm install floater.js`.
@@ -152,5 +157,13 @@ By defining the `type` property you may add a specific classname for your messag
     
     .floater-message.bad {
     	background: #C23B22;
+    }
+    
+    button {
+        outline: none;
+        border: none;
+        background-color: rgb(100, 100, 100);
+        color: white;
+        border-radius: 5px;
     }
     
