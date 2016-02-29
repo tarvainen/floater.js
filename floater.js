@@ -37,7 +37,12 @@ Floater.prototype.createElements = function () {
 		container.appendChild(error);
 		container.appendChild(el);
 
-		this.hide(lbl);
+		if (el.value) {
+			this.show(lbl);
+		} else {
+			this.hide(lbl);
+		}
+
 		this.bindEvent(el, lbl);
 	}
 }
